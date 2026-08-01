@@ -6,9 +6,15 @@
   --personal-warm: #F7F6F2
   --personal-muted: #667085
 
+*,
+*::before,
+*::after
+  box-sizing: border-box
+
 body
   background: var(--personal-warm)
   color: #1F2933
+  overflow-x: hidden
 
 a
   color: var(--personal-primary)
@@ -40,6 +46,64 @@ a
   max-width: 760px
   text-shadow: 0 2px 18px rgba(0, 0, 0, .22)
 
+.header
+  margin-bottom: 2.4rem
+
+.navbar
+  min-height: 7.6rem
+
+.header .brand .logo
+  height: 5.2rem
+  max-width: 22rem
+  object-fit: contain
+
+.main-nav .nav-item-link
+  font-size: 1.75rem
+  font-weight: 500
+
+.page-heading
+  min-width: 0
+
+.page-heading .slogan
+  width: 100%
+  max-width: 100%
+  text-align: center
+  white-space: normal
+  overflow-wrap: anywhere
+  word-break: break-word
+
+.main > section > .container
+  max-width: 120rem
+
+.banner
+  width: 100%
+  max-width: 120rem
+  height: 34rem
+  margin-right: auto
+  margin-left: auto
+  border-radius: 8px
+
+.banner::before
+  background-color: rgba(16, 36, 56, .68)
+
+.banner .banner-text
+  width: 100%
+  padding: 0 2rem
+  overflow-wrap: anywhere
+
+.banner .banner-text .page-type-title
+  color: #FFFFFF
+  font-size: 4.6rem
+  font-weight: 700
+  line-height: 1.16
+  margin-bottom: 1.2rem
+
+.banner .banner-text .slogan
+  color: rgba(247, 246, 242, .88)
+  font-size: 2.6rem
+  font-weight: 400
+  line-height: 1.35
+
 .section-heading h3,
 .page-type-title,
 .article-title
@@ -63,24 +127,85 @@ a
   color: var(--personal-muted)
 
 .project-list
-  gap: 24px 0
+  display: grid
+  grid-template-columns: repeat(2, minmax(0, 1fr))
+  gap: 28px
+  margin: 0
+  width: 100%
+  max-width: 100%
+
+.project-list > .project-col
+  width: auto
+  max-width: none
+  flex: none
+  min-width: 0
+  padding: 0
 
 .project-card
+  display: flex
+  flex-direction: column
   height: 100%
+  min-width: 0
   border: 1px solid rgba(24, 50, 74, .08)
 
+.project-card *
+  min-width: 0
+
 .project-card .card-img
-  aspect-ratio: 1200 / 760
+  display: block
+  width: 100%
+  aspect-ratio: 16 / 9
   object-fit: cover
   background: #E7EEF3
+
+.project-card .card-body
+  display: flex
+  flex-direction: column
+  flex: 1
+  padding: 2.4rem
+
+.project-card .card-title
+  max-width: 100%
+  min-height: 6.2rem
+  font-size: 2rem
+  line-height: 1.45
+  overflow-wrap: anywhere
+  word-break: break-word
+  overflow: hidden
+  display: -webkit-box
+  -webkit-line-clamp: 2
+  -webkit-box-orient: vertical
+
+.project-card .card-title a
+  display: block
+  max-width: 100%
+  white-space: normal
+  overflow-wrap: anywhere
+  word-break: break-all
+
+.project-card .card-text
+  max-width: 100%
+  min-height: 7.6rem
+  line-height: 1.65
+  overflow-wrap: anywhere
+  word-break: break-word
+  overflow: hidden
+  display: -webkit-box
+  -webkit-line-clamp: 3
+  -webkit-box-orient: vertical
 
 .project-stats
   display: grid
   grid-template-columns: repeat(3, minmax(0, 1fr))
   gap: 12px
-  margin-top: 22px
+  margin-top: auto
+  padding-top: 2.2rem
 
 .project-stat
+  display: flex
+  flex-direction: column
+  justify-content: center
+  min-height: 7.8rem
   padding: 12px 10px
   border-radius: 8px
   background: rgba(24, 50, 74, .06)
@@ -89,29 +214,97 @@ a
 .project-stat strong
   display: block
   color: var(--personal-accent)
-  font-size: 1.28rem
+  font-size: 1.95rem
   line-height: 1.2
 
 .project-stat span
   display: block
   margin-top: 4px
   color: var(--personal-muted)
-  font-size: .82rem
+  font-size: 1.25rem
   line-height: 1.35
 
 .article-entry
+  max-width: 98rem
+  width: 100%
+  margin-right: auto
+  margin-left: auto
+  font-size: 1.75rem
   line-height: 1.86
   overflow-wrap: anywhere
+  word-break: break-word
+
+.article-entry p,
+.article-entry li
+  white-space: normal
+  overflow-wrap: anywhere
+  word-break: break-word
 
 .article-entry h1,
 .article-entry h2,
 .article-entry h3
   color: var(--personal-primary)
+  line-height: 1.28
+
+.article-entry h1
+  font-size: 4.2rem
+  margin-bottom: 2rem
+
+.article-entry h2
+  font-size: 3.1rem
+  margin-top: 3.2rem
+  margin-bottom: 1.4rem
+
+.article-entry h3
+  font-size: 2.3rem
+  margin-top: 2.2rem
+  margin-bottom: 1rem
+
+.article-entry p,
+.article-entry ul,
+.article-entry ol
+  margin-bottom: 1.35rem
+
+.article-footer
+  max-width: 98rem
+  margin-right: auto
+  margin-left: auto
+
+#projects .d-flex.justify-content-center
+  padding-top: 3.6rem
+
+#projects .btn
+  box-shadow: none
+  border: 1px solid rgba(24, 50, 74, .12)
 
 .footer
   background: #FFFFFF
 
+@media (max-width: 1023px)
+  .header .brand .logo
+    height: 4.8rem
+    max-width: 19rem
+
 @media (max-width: 768px)
+  .navbar
+    min-height: 7.2rem
+
+  .header .brand .logo
+    height: 4.4rem
+    max-width: 17rem
+
+  .banner
+    height: 26rem
+    border-radius: 8px
+
+  .banner .banner-text .page-type-title
+    font-size: 3.8rem
+
+  .banner .banner-text .slogan
+    font-size: 2.25rem
+    max-width: 100%
+    word-break: break-word
+
   .figure-inset
     max-width: 92vw
 
@@ -123,6 +316,23 @@ a
     font-size: 1rem
     line-height: 1.6
 
+  .main > section > .container
+    padding-right: 2rem
+    padding-left: 2rem
+
+  .project-list
+    grid-template-columns: 1fr
+    gap: 24px
+    overflow: hidden
+
+  .project-card .card-title
+    min-height: auto
+    word-break: break-all
+
+  .project-card .card-text
+    min-height: auto
+    word-break: break-all
+
   .project-stats
     grid-template-columns: 1fr
 
@@ -130,11 +340,31 @@ a
     text-align: left
 
   .article-entry
-    font-size: 1rem
+    font-size: 1.7rem
+    word-break: break-all
+
+  .article-entry p,
+  .article-entry li
+    word-break: break-all
+
+  .article-entry h1
+    font-size: 3.4rem
+
+  .article-entry h2
+    font-size: 2.8rem
+
+  .article-entry h3
+    font-size: 2.2rem
 
 @media (max-width: 420px)
   .figure-inset .h1
     font-size: 1.85rem
+
+  .banner .banner-text .page-type-title
+    font-size: 3.4rem
+
+  .banner .banner-text .slogan
+    font-size: 2rem
 
   .section
     padding-top: 3rem
