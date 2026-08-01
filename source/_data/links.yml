@@ -2,15 +2,11 @@
 # name:         文字/标题
 # link:         链接路径，无链接为空即可
 #
-- name: Acorn
-  link: https://acorn.imaging.xin/
+- name: 吉林大学
+  link: https://www.jlu.edu.cn/
+
+- name: 北京大学
+  link: https://www.pku.edu.cn/
 
 - name: Hexo
   link: https://hexo.io/
-
-- name: GitHub
-  link: https://github.com
-
-- name: To Base64
-  link: https://duoyu.wang
-

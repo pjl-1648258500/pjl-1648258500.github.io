@@ -2,12 +2,6 @@
 
 <%- partial('_partial/page/hero', {cache: true}) %>
 
-<section class="section py-5 bg-light">
-  <div class="container">
-    <%- partial('_partial/culture', {cache: true}) %>
-  </div>
-</section>
-
 <% for (var section in site.data.index){%>
   <section class="section py-5 <%=site.data.index[section]['bg_color'] %>" id="<%=site.data.index[section]['id'] %>">
     <div class="container<%=site.data.index[section]['fluid'] %>">

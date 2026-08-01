@@ -1,4 +1,4 @@
-## 项目案例
+## 代表项目
 # name:         标题
 # en_name:      英文标题
 # description:  描述内容
@@ -6,23 +6,30 @@
 # link:         链接路径，无链接为空即可
 # preview:      预览路径，无则可以为空
 #
-- name: 滕王阁序
-  en_name: 
-  description: 豫章故郡，洪都新府。星分翼轸，地接衡庐。襟三江而带五湖，控蛮荆而引瓯越。物华天宝，龙光射牛斗之墟；人杰地灵，徐孺下陈蕃之榻。
-  cover: /images/sample/mydesk.png
-  link: /2012/12/21/tengwanggexu/
-  preview: 
+- name: 千万级OD交通路径数据处理与出行特征构建
+  en_name: 2026.01—2026.03｜项目执行者
+  description: 基于 Python、Pandas、SQLite 和高德地图 API，搭建大规模 OD 路径数据处理流水线，覆盖地理编码、路线查询、失败重试、缓存复用、批量写入和断点续传等环节。
+  cover: /images/projects/od-network.svg
+  link: /projects/od-transport/
+  preview:
+  stats:
+    - value: 797万
+      label: 原始OD记录
+    - value: 4000万
+      label: 结构化路线分段
+    - value: 85万
+      label: 去重坐标对
 
-- name: 滕王阁序
-  en_name: 
-  description: 豫章故郡，洪都新府。星分翼轸，地接衡庐。襟三江而带五湖，控蛮荆而引瓯越。物华天宝，龙光射牛斗之墟；人杰地灵，徐孺下陈蕃之榻。
-  cover: /images/sample/mydesk.png
-  link: /2012/12/21/tengwanggexu/
-  preview: 
-
-- name: 滕王阁序
-  en_name: 
-  description: 豫章故郡，洪都新府。星分翼轸，地接衡庐。襟三江而带五湖，控蛮荆而引瓯越。物华天宝，龙光射牛斗之墟；人杰地灵，徐孺下陈蕃之榻。
-  cover: /images/sample/mydesk.png
-  link: /2012/12/21/tengwanggexu/
-  preview: 
+- name: 乡村文旅数据采集与热点村庄识别平台
+  en_name: 2026.04—2026.05｜项目执行者
+  description: 基于 Python、SQLite、自动化工具和桌面 GUI，构建从城市定位、POI采集、村庄筛选到笔记数据清洗和热点识别的完整流程。
+  cover: /images/projects/rural-digital-footprint.svg
+  link: /projects/rural-tourism/
+  preview:
+  stats:
+    - value: 82
+      label: 覆盖城市
+    - value: 1.26万
+      label: 候选村庄
+    - value: 16.69万
+      label: 清洗后笔记

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="education icon">
+  <circle cx="64" cy="64" r="56" fill="#F7F6F2"/>
+  <path d="M26 50 64 31l38 19-38 19-38-19Z" fill="#18324A"/>
+  <path d="M42 63v20c12 9 32 9 44 0V63L64 74 42 63Z" fill="#8FA8B8"/>
+  <path d="M100 52v28" stroke="#8B2E2E" stroke-width="6" stroke-linecap="round"/>
+</svg>

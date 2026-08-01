@@ -1,20 +1,145 @@
-// Index style
-//
-.index-about
+// Personal homepage v1 custom style
+
+:root
+  --personal-primary: #18324A
+  --personal-accent: #8B2E2E
+  --personal-warm: #F7F6F2
+  --personal-muted: #667085
+
+body
+  background: var(--personal-warm)
+  color: #1F2933
+
+a
+  color: var(--personal-primary)
+  &:hover
+    color: var(--personal-accent)
+
+.hero
   position: relative
-  z-index: 1
-  background-size: cover
-  background-position: center
-  background-image: url(/images/banner/city_scene.jpg)
-  &::before
-    content: ''
-    position: absolute
-    z-index: 2
-    top: 0
-    right: 0
-    bottom: 0
-    left: 0
-    background-image: linear-gradient(180deg, #00b5ef, #3388ff)
-    opacity: .9
-  .container
-    z-index: 3
+
+.hero::after
+  content: ''
+  position: absolute
+  inset: 0
+  background: linear-gradient(90deg, rgba(16, 36, 56, .74), rgba(24, 50, 74, .42), rgba(24, 50, 74, .22))
+  pointer-events: none
+
+.hero-figure
+  position: relative
+  overflow: hidden
+
+.hero-figure figcaption
+  position: relative
+  z-index: 2
+
+.hero-figure-img
+  filter: saturate(.95)
+
+.figure-inset
+  max-width: 760px
+  text-shadow: 0 2px 18px rgba(0, 0, 0, .22)
+
+.section-heading h3,
+.page-type-title,
+.article-title
+  color: var(--personal-primary)
+
+.text-primary
+  color: var(--personal-primary)
+
+.bg-light
+  background-color: var(--personal-warm)
+
+.card
+  border-radius: 8px
+  overflow: hidden
+  box-shadow: 0 14px 35px rgba(24, 50, 74, .08)
+
+.card-title
+  line-height: 1.45
+
+.card-text
+  color: var(--personal-muted)
+
+.project-list
+  gap: 24px 0
+
+.project-card
+  height: 100%
+  border: 1px solid rgba(24, 50, 74, .08)
+
+.project-card .card-img
+  aspect-ratio: 1200 / 760
+  object-fit: cover
+  background: #E7EEF3
+
+.project-stats
+  display: grid
+  grid-template-columns: repeat(3, minmax(0, 1fr))
+  gap: 12px
+  margin-top: 22px
+
+.project-stat
+  padding: 12px 10px
+  border-radius: 8px
+  background: rgba(24, 50, 74, .06)
+  text-align: center
+
+.project-stat strong
+  display: block
+  color: var(--personal-accent)
+  font-size: 1.28rem
+  line-height: 1.2
+
+.project-stat span
+  display: block
+  margin-top: 4px
+  color: var(--personal-muted)
+  font-size: .82rem
+  line-height: 1.35
+
+.article-entry
+  line-height: 1.86
+  overflow-wrap: anywhere
+
+.article-entry h1,
+.article-entry h2,
+.article-entry h3
+  color: var(--personal-primary)
+
+.footer
+  background: #FFFFFF
+
+@media (max-width: 768px)
+  .figure-inset
+    max-width: 92vw
+
+  .figure-inset .h1
+    font-size: 2.2rem
+    line-height: 1.18
+
+  .figure-inset p
+    font-size: 1rem
+    line-height: 1.6
+
+  .project-stats
+    grid-template-columns: 1fr
+
+  .project-stat
+    text-align: left
+
+  .article-entry
+    font-size: 1rem
+
+@media (max-width: 420px)
+  .figure-inset .h1
+    font-size: 1.85rem
+
+  .section
+    padding-top: 3rem
+    padding-bottom: 3rem
+
+  .card-body
+    padding-left: 1.25rem
+    padding-right: 1.25rem

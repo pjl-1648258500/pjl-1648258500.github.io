@@ -3,17 +3,24 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: 平景龙
 subtitle: ''
-description: ''
+description: 数据科学与空间规划交叉方向学生个人主页，展示教育背景、研究兴趣与项目经历。
 keywords:
-author: John Doe
+  - 平景龙
+  - 数据科学
+  - 国土空间规划
+  - 空间数据
+  - 城市交通
+  - 乡村发展
+  - Python
+author: 平景龙
 language: en
 timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: http://localhost:4000
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:

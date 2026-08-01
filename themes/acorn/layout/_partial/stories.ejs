@@ -1,14 +1,25 @@
-<div class="col-3">
-  <div class="card rounded">
+<div class="col-6 project-col">
+  <div class="card rounded project-card">
     <a href="<%= url_for(plugin.link) %>">
       <img class="card-img lazyload" data-src="<%= url_for(plugin.cover) %>" alt="<% plugin.name %>">
     </a>
     <div class="card-body bg-light">
-      <h5 class="card-title line-clamp line-clamp-1">
+      <small class="text-gray d-block mb-2"><%= plugin.en_name %></small>
+      <h5 class="card-title">
         <a href="<%= url_for(plugin.link) %>"><%= plugin.name %></a>
       </h5>
       <hr class="hr">
       <div class="card-text text-gray line-clamp line-clamp-2"><%= plugin.description %></div>
+      <% if (plugin.stats) { %>
+        <div class="project-stats">
+          <% plugin.stats.forEach(function(stat){ %>
+            <div class="project-stat">
+              <strong><%= stat.value %></strong>
+              <span><%= stat.label %></span>
+            </div>
+          <% }) %>
+        </div>
+      <% } %>
     </div>
   </div>
 </div>

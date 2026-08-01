@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-label="rural digital footprint network">
+  <defs>
+    <linearGradient id="ruralbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F7F6F2"/>
+      <stop offset="1" stop-color="#DCE7DE"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="760" rx="36" fill="url(#ruralbg)"/>
+  <g fill="none" stroke="#B7C7D1" stroke-width="3" opacity="0.75">
+    <path d="M120 560 C260 500 330 415 470 450 S720 575 880 490 S1020 340 1100 285"/>
+    <path d="M160 210 C340 290 450 230 610 300 S810 380 1010 230"/>
+    <path d="M260 640 C440 590 620 640 820 585 S1020 580 1110 515"/>
+  </g>
+  <g fill="#18324A" opacity="0.88">
+    <circle cx="220" cy="520" r="26"/>
+    <circle cx="410" cy="440" r="24"/>
+    <circle cx="650" cy="520" r="28"/>
+    <circle cx="910" cy="455" r="26"/>
+  </g>
+  <g fill="#4E7D61">
+    <circle cx="300" cy="245" r="16"/>
+    <circle cx="480" cy="270" r="14"/>
+    <circle cx="610" cy="315" r="18"/>
+    <circle cx="760" cy="360" r="13"/>
+    <circle cx="960" cy="255" r="17"/>
+    <circle cx="1040" cy="520" r="15"/>
+    <circle cx="785" cy="590" r="14"/>
+    <circle cx="520" cy="620" r="13"/>
+  </g>
+  <g stroke="#8B2E2E" stroke-width="8" stroke-linecap="round">
+    <path d="M160 142h250"/>
+    <path d="M160 190h185"/>
+    <path d="M160 238h220"/>
+  </g>
+  <g transform="translate(770 112)">
+    <rect x="0" y="0" width="260" height="150" rx="20" fill="#FFFFFF" opacity="0.78"/>
+    <path d="M42 104 92 68l46 24 76-58" fill="none" stroke="#18324A" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="92" cy="68" r="10" fill="#8B2E2E"/>
+    <circle cx="138" cy="92" r="10" fill="#4E7D61"/>
+    <circle cx="214" cy="34" r="10" fill="#18324A"/>
+  </g>
+</svg>

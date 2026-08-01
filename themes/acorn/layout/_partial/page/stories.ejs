@@ -1,18 +1,29 @@
-<div class="row">
+<div class="row project-list">
   <% for (var item in site.data.stories){%>
-    <div class="col">
-      <div class="card rounded bg-white">
+    <div class="col project-col">
+      <div class="card rounded bg-white project-card">
         <a href="<%=url_for(site.data.stories[item]['link']) %>">
           <img class="card-img lazyload" data-src="<%=url_for(site.data.stories[item]['cover']) %>" alt="<%=site.data.stories[item]['name'] %>">
         </a>
         <div class="card-body px-4">
-          <h5 class="card-title line-clamp line-clamp-1">
+          <small class="text-gray d-block mb-2"><%=site.data.stories[item]['en_name'] %></small>
+          <h5 class="card-title">
             <a href="<%=url_for(site.data.stories[item]['link']) %>">
               <%=site.data.stories[item]['name'] %>
             </a>
           </h5>
           <hr class="hr">
           <p class="card-text text-gray line-clamp line-clamp-2"><%=site.data.stories[item]['description'] %></p>
+          <% if (site.data.stories[item]['stats']) { %>
+            <div class="project-stats">
+              <% site.data.stories[item]['stats'].forEach(function(stat){ %>
+                <div class="project-stat">
+                  <strong><%= stat.value %></strong>
+                  <span><%= stat.label %></span>
+                </div>
+              <% }) %>
+            </div>
+          <% } %>
         </div>
       </div>
     </div>

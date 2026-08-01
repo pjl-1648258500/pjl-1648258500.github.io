@@ -1,9 +1,7 @@
 # Header
 menu:
   首页: /
-  画廊: /gallery
-  案例: /stories
-  新闻: /archives
+  项目: /stories
   关于: /about
 
 # Content
@@ -27,7 +25,7 @@ video:
   path: /images/movie/
 ## Hero image
 hero: 
-  image: /images/banner/banner.jpg
+  image: /images/banner/personal-banner.svg
 ## Swiper
 ## https://github.com/nolimits4web/swiper
 swiper: 
@@ -39,11 +37,11 @@ toc: true
 
 # Slogan
 slogan: 
-  primary: 焕然一新
-  secondary: Acorn 是一颗适用于中小企业的 Hexo 主题
-  archives: 汇聚热点话题 打造创新思路
-  pages: 运维更智能 部署更方便 应用更便捷
-  posts: 实践见真知既是最好的解释
+  primary: 平景龙 · Jinglong Ping
+  secondary: 数据科学与空间规划｜城市交通、空间数据与乡村发展
+  archives: 文章与动态
+  pages: Data Science × Spatial Planning
+  posts: 用数据工程和计算方法理解城市、交通与乡村空间
 
 # Library
 libs:

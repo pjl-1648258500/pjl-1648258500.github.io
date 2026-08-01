@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="data icon">
+  <circle cx="64" cy="64" r="56" fill="#F7F6F2"/>
+  <g fill="none" stroke="#18324A" stroke-width="6" stroke-linecap="round">
+    <ellipse cx="64" cy="36" rx="30" ry="12"/>
+    <path d="M34 36v42c0 7 13 13 30 13s30-6 30-13V36"/>
+    <path d="M34 57c0 7 13 13 30 13s30-6 30-13"/>
+  </g>
+  <path d="M42 94h44" stroke="#8B2E2E" stroke-width="6" stroke-linecap="round"/>
+</svg>

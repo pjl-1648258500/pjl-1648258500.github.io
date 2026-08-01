@@ -1,4 +1,4 @@
-## 企业文化
+## 个人概览
 # name:         标题
 # en_name:      英文标题
 # description:  描述内容
@@ -6,23 +6,23 @@
 # cover_size:   封面图片大小
 # link:         链接路径，无链接为空即可
 #
-- name: 企业文化
-  en_name: 
-  description: 潦水尽而寒潭清，烟光凝而暮山紫。俨骖騑于上路，访风景于崇阿；临帝子之长洲，得天人之旧馆。
-  cover: /images/culture/icon_1.svg
+- name: 教育路径
+  en_name: Education
+  description: 吉林大学数据科学与大数据技术本科。2026年9月起，将在北京大学深圳研究生院攻读国土空间规划硕士学位。
+  cover: /images/profile/education.svg
   cover_size: 64
   link:
 
-- name: 企业文化
-  en_name: 
-  description: 潦水尽而寒潭清，烟光凝而暮山紫。俨骖騑于上路，访风景于崇阿；临帝子之长洲，得天人之旧馆。
-  cover: /images/culture/icon_2.svg
+- name: 研究兴趣
+  en_name: Research
+  description: 关注城市交通与人口流动、空间数据工程、乡村发展与数字足迹，希望通过计算方法理解城市与区域问题。
+  cover: /images/profile/research.svg
   cover_size: 64
   link:
 
-- name: 企业文化
-  en_name: 
-  description: 潦水尽而寒潭清，烟光凝而暮山紫。俨骖騑于上路，访风景于崇阿；临帝子之长洲，得天人之旧馆。
-  cover: /images/culture/icon_3.svg
+- name: 技术方向
+  en_name: Data
+  description: 主要使用 Python、Pandas 和 SQLite 处理大规模数据，具有外部 API 调度、数据清洗、断点续传和桌面工具开发经验。
+  cover: /images/profile/data.svg
   cover_size: 64
   link:

@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2560 1200" role="img" aria-label="abstract data and spatial planning background">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#102438"/>
+      <stop offset="0.52" stop-color="#18324A"/>
+      <stop offset="1" stop-color="#2F4858"/>
+    </linearGradient>
+    <linearGradient id="warm" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#F7F6F2" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#C9D6DF" stop-opacity="0.02"/>
+    </linearGradient>
+  </defs>
+  <rect width="2560" height="1200" fill="url(#bg)"/>
+  <rect width="2560" height="1200" fill="url(#warm)"/>
+  <g stroke="#F7F6F2" stroke-opacity="0.08" stroke-width="1">
+    <path d="M0 220 C420 170 760 310 1180 250 S2020 130 2560 210"/>
+    <path d="M0 355 C360 320 680 430 1060 385 S1800 250 2560 340"/>
+    <path d="M0 515 C390 455 760 560 1190 520 S1980 410 2560 490"/>
+    <path d="M0 690 C480 620 810 730 1220 690 S2050 585 2560 640"/>
+    <path d="M0 850 C420 790 720 930 1140 885 S1910 750 2560 830"/>
+  </g>
+  <g stroke="#8FA8B8" stroke-opacity="0.22" stroke-width="3" fill="none">
+    <path d="M230 790 L530 625 L820 720 L1120 520 L1470 590 L1785 410 L2200 515"/>
+    <path d="M390 930 L760 840 L1090 910 L1390 760 L1730 830 L2100 690"/>
+    <path d="M610 390 L930 470 L1275 360 L1630 445 L1975 315 L2320 410"/>
+  </g>
+  <g stroke="#F7F6F2" stroke-opacity="0.10" stroke-width="1">
+    <path d="M1660 140 L1660 1060"/>
+    <path d="M1780 120 L1780 1080"/>
+    <path d="M1900 100 L1900 1100"/>
+    <path d="M2020 130 L2020 1070"/>
+    <path d="M2140 160 L2140 1040"/>
+    <path d="M2260 210 L2260 990"/>
+    <path d="M1540 300 L2380 300"/>
+    <path d="M1510 420 L2400 420"/>
+    <path d="M1480 540 L2420 540"/>
+    <path d="M1510 660 L2400 660"/>
+    <path d="M1540 780 L2380 780"/>
+    <path d="M1600 900 L2320 900"/>
+  </g>
+  <g fill="#F7F6F2" fill-opacity="0.45">
+    <circle cx="230" cy="790" r="9"/>
+    <circle cx="530" cy="625" r="7"/>
+    <circle cx="820" cy="720" r="8"/>
+    <circle cx="1120" cy="520" r="10"/>
+    <circle cx="1470" cy="590" r="8"/>
+    <circle cx="1785" cy="410" r="10"/>
+    <circle cx="2200" cy="515" r="9"/>
+    <circle cx="390" cy="930" r="7"/>
+    <circle cx="760" cy="840" r="9"/>
+    <circle cx="1090" cy="910" r="7"/>
+    <circle cx="1390" cy="760" r="8"/>
+    <circle cx="1730" cy="830" r="9"/>
+    <circle cx="2100" cy="690" r="8"/>
+  </g>
+  <g fill="#8B2E2E" fill-opacity="0.36">
+    <circle cx="1120" cy="520" r="22"/>
+    <circle cx="1785" cy="410" r="20"/>
+    <circle cx="1730" cy="830" r="18"/>
+  </g>
+  <g stroke="#F7F6F2" stroke-opacity="0.07" stroke-width="2" fill="none">
+    <path d="M-80 1030 C320 960 650 1010 980 930 C1320 850 1670 960 2020 880 C2280 820 2450 850 2640 800"/>
+    <path d="M-80 1090 C320 1020 680 1080 1010 990 C1330 910 1660 1010 2020 940 C2290 890 2470 910 2640 860"/>
+  </g>
+</svg>
