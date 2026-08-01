@@ -1,6 +1,6 @@
-# 个人主页本地样例
+# 平景龙个人主页
 
-这是一个使用 Hexo 和 Acorn 主题搭建的个人展示主页。本阶段定位为“平景龙的个人主页，展示数据科学与空间规划方向的教育背景、研究兴趣和代表项目”。
+这是一个使用 Hexo 和 Acorn 主题搭建的个人展示主页，定位为“平景龙的个人主页，展示数据科学与空间规划方向的教育背景、研究兴趣和代表项目”。
 
 核心标签：`Data Science × Spatial Planning`。
 
@@ -60,6 +60,11 @@ http://localhost:4000
 - OD交通项目：`http://localhost:4000/projects/od-transport/`
 - 乡村文旅项目：`http://localhost:4000/projects/rural-tourism/`
 
+## 线上访问
+
+- 网站地址：`https://pjl-1648258500.github.io/`
+- 源代码仓库：`https://github.com/pjl-1648258500/pjl-1648258500.github.io`
+
 ## 生成静态网站
 
 ```powershell
@@ -70,13 +75,31 @@ npx --no-install hexo generate
 
 生成结果会输出到 `public` 目录。
 
+也可以使用 npm 脚本：
+
+```powershell
+cd "D:\dataset\lpl\my_page"
+npm run build
+```
+
+## 发布方式
+
+当前使用 GitHub Actions 发布 GitHub Pages。推送 `main` 分支后，工作流会自动安装依赖、生成 Hexo 静态网站，并将 `public` 目录发布到 GitHub Pages。
+
+```powershell
+cd "D:\dataset\lpl\my_page"
+git status
+git add .
+git commit -m "update: revise website content"
+git push
+```
+
 ## 当前阶段状态
 
 - 已安装并启用 Acorn 主题
 - 已从 Acorn 官方示例站改造为第一版个人主页
 - 已完成本地生成和访问验证
-- 尚未配置 GitHub Pages
-- 尚未上传到 GitHub
+- 已配置 GitHub Pages 自动发布工作流
 - 尚未绑定域名
 - 当前不提供完整简历下载
 - 当前不提供 PDF 简历文件
@@ -90,7 +113,7 @@ npx --no-install hexo generate
 
 ## 内容主要文件
 
-- `_config.yml`：站点标题、作者、描述、关键词和本地 URL
+- `_config.yml`：站点标题、作者、描述、关键词和正式网站地址
 - `themes/acorn/_config.yml`：导航、Hero 文案、Logo、favicon、首页背景图等主题配置
 - `source/about/index.md`：关于页面正文
 - `source/stories/index.md`：代表项目列表页面入口
@@ -105,6 +128,7 @@ npx --no-install hexo generate
 - `source/images/brand.svg`：站点 Logo
 - `source/images/projects/`：项目封面图
 - `themes/acorn/source/css/_custom/index.styl`：少量自定义视觉优化
+- `.github/workflows/pages.yml`：GitHub Pages 自动构建与发布工作流
 
 ## 公开隐私原则
 
@@ -123,4 +147,4 @@ npx --no-install hexo generate
 - 正式入学后，修改 `source/about/index.md` 中北京大学硕士阶段表述。
 - 如需替换个人照片或校园照片，优先替换 `source/images/banner/personal-banner.svg` 或在 `themes/acorn/_config.yml` 中修改 `hero.image`。
 - 如需添加 GitHub、LinkedIn 等链接，先确认真实公开地址，再修改 `source/_data/contact.yml` 或 `source/_data/links.yml`。
-- 如需部署到 GitHub Pages，再修改 `_config.yml` 的 `url` 和部署配置；当前未配置。
+- 如需更换公网域名，再修改 `_config.yml` 的 `url` 并在 GitHub Pages 中单独配置自定义域名。
