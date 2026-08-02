@@ -14,7 +14,7 @@ beian:
   url: https://beian.miit.gov.cn/
 
 # Miscellaneous
-favicon: /images/favicon.ico
+favicon: /images/favicon.png
 webclip: /images/webclip
 brand:   /images/brand.svg
 
