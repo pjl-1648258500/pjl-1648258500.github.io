@@ -9,6 +9,14 @@
         <h3><%=site.data.index[section]['title'] %></h3>
         <p class="text-gray"><%=site.data.index[section]['subtitle'] %></p>
       </div>
+      <% if (site.data.index[section]['id'] === 'profile') { %>
+        <div class="profile-context" aria-label="个人主页方向">
+          <span>数据科学</span>
+          <span>空间规划</span>
+          <span>城市交通</span>
+          <span>乡村发展</span>
+        </div>
+      <% } %>
 
       <% if ('partial' in site.data.index[section]) { %>
         <div class="section-body">

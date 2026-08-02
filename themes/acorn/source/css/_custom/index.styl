@@ -75,6 +75,33 @@ a
   max-width: 5rem
   object-fit: contain
 
+.header .brand
+  display: inline-flex
+  align-items: center
+  gap: 1.4rem
+  color: var(--personal-primary)
+  text-decoration: none
+
+.brand-copy
+  display: flex
+  flex-direction: column
+  justify-content: center
+  min-width: 0
+  padding-left: 1.4rem
+  border-left: 1px solid rgba(24, 50, 74, .20)
+  line-height: 1.2
+
+.brand-name
+  color: var(--personal-primary)
+  font-size: 1.9rem
+  font-weight: 700
+
+.brand-subtitle
+  margin-top: .35rem
+  color: var(--personal-muted)
+  font-size: 1.1rem
+  white-space: nowrap
+
 .main-nav
   padding-top: 0
   padding-bottom: 0
@@ -312,6 +339,27 @@ a
   margin-bottom: 3rem
   padding-bottom: 1.4rem
 
+.profile-context
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  gap: 1rem
+  max-width: 82rem
+  margin: -1.6rem auto 3.4rem
+
+.profile-context span
+  display: inline-flex
+  align-items: center
+  min-height: 3.6rem
+  padding: .75rem 1.45rem
+  border: 1px solid rgba(24, 50, 74, .10)
+  border-radius: 999px
+  background: rgba(255, 255, 255, .72)
+  color: var(--personal-primary)
+  font-size: 1.35rem
+  font-weight: 500
+  box-shadow: 0 10px 26px rgba(24, 50, 74, .045)
+
 @media (max-width: 1023px)
   .header .brand .logo
     width: 4.8rem
@@ -327,6 +375,9 @@ a
   .navbar
     min-height: 6rem
 
+  .brand-copy
+    display: none
+
   .header .brand .logo
     width: 4.5rem
     height: 4.5rem
@@ -334,6 +385,16 @@ a
 
   #profile
     padding-top: 2.4rem
+
+  .profile-context
+    margin-top: -1.2rem
+    margin-bottom: 2.6rem
+    gap: .8rem
+
+  .profile-context span
+    min-height: 3.2rem
+    padding: .62rem 1.05rem
+    font-size: 1.2rem
 
   .hero-figure
     height: 62vh
