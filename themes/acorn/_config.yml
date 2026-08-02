@@ -16,7 +16,7 @@ beian:
 # Miscellaneous
 favicon: /images/favicon.png
 webclip: /images/webclip
-brand:   /images/brand.svg
+brand:   /images/favicon.png
 
 # Jumbotron video & Hero image & Swiper
 ## Jumbotron video
