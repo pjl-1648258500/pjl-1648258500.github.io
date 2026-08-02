@@ -33,6 +33,9 @@ a
 
 .hero-figure
   position: relative
+  height: 64vh
+  min-height: 52rem
+  max-height: 68rem
   overflow: hidden
 
 .hero-figure figcaption
@@ -47,14 +50,15 @@ a
   text-shadow: 0 2px 18px rgba(0, 0, 0, .22)
 
 .header
-  margin-bottom: 2.4rem
+  margin-bottom: 1.6rem
 
 .navbar
-  min-height: 7.6rem
+  min-height: 7rem
 
 .header .brand .logo
-  height: 5.2rem
-  max-width: 22rem
+  width: 5.6rem
+  height: 5.6rem
+  max-width: 5.6rem
   object-fit: contain
 
 .main-nav .nav-item-link
@@ -282,16 +286,28 @@ a
 
 @media (max-width: 1023px)
   .header .brand .logo
-    height: 4.8rem
-    max-width: 19rem
+    width: 5.2rem
+    height: 5.2rem
+    max-width: 5.2rem
+
+  .hero-figure
+    height: 62vh
+    min-height: 48rem
+    max-height: 62rem
 
 @media (max-width: 768px)
   .navbar
-    min-height: 7.2rem
+    min-height: 6.8rem
 
   .header .brand .logo
-    height: 4.4rem
-    max-width: 17rem
+    width: 4.8rem
+    height: 4.8rem
+    max-width: 4.8rem
+
+  .hero-figure
+    height: 62vh
+    min-height: 42rem
+    max-height: 52rem
 
   .banner
     height: 26rem
@@ -357,6 +373,15 @@ a
     font-size: 2.2rem
 
 @media (max-width: 420px)
+  .header .brand .logo
+    width: 4.4rem
+    height: 4.4rem
+    max-width: 4.4rem
+
+  .hero-figure
+    height: 60vh
+    min-height: 38rem
+
   .figure-inset .h1
     font-size: 1.85rem
 
